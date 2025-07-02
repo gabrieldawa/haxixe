@@ -7,8 +7,8 @@ public class Main {
         Scanner s = new Scanner(System.in);
 
         String password = s.nextLine();
-        password = h.hash1(password);
-
+        password = h.encode(password);
+        System.out.println("hash: " + password);
 
         s.close();
     }
